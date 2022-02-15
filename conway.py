@@ -51,10 +51,6 @@ class Board:
 
         # Update the board, but only for the temporary board 
         tempBoard[i*self.cols + j] = 'X' if alive == True else '-'
-        if alive == True:
-          tempBoard[i*self.cols + j] = 'X'
-        else:
-          tempBoard[i*self.cols + j] = '-'
 
     # Copy contents of the new board to original board
     self.board = deepcopy(tempBoard)
